@@ -1,105 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vehículos & Maquinaria Diésel • WORLD TECH JAPAN Co., Ltd.</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehículos & Maquinaria Diésel | WORLD TECH JAPAN</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
-    <!-- HEADER / NAVIGATION -->
-    <header class="navbar">
-      <div class="nav-container">
-        <a href="index.html" class="brand-logo">
-          <div class="logo-icon-gem">WTJ</div>
-          <div class="logo-text-group">
-            <span class="brand-name">WORLD TECH JAPAN</span>
-            <span class="brand-sub">Co., Ltd. • Yokohama</span>
-          </div>
+
+    <header>
+        <a href="index.html" class="logo-container">
+            <div class="logo-symbol">WTJ</div>
+            <div class="logo-text">WORLD TECH JAPAN</div>
         </a>
-        <nav class="nav-menu">
-          <a href="index.html" class="nav-link ">Inicio</a>
-          <a href="industrial.html" class="nav-link ">División Industrial</a>
-          <a href="audio.html" class="nav-link ">Audio High-End</a>
-          <a href="maquinaria.html" class="nav-link active">Maquinaria & Vehículos</a>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-i18n="company">Compañía</a></li>
+                <li><a href="industrial.html" data-i18n="div1">Industrial & Metrología</a></li>
+                <li><a href="audio.html" data-i18n="div2">Audio High-End JDM</a></li>
+                <li><a href="maquinaria.html" class="active" data-i18n="div3">Vehículos & Maquinaria Diésel</a></li>
+                <li>
+                    <select id="langSelect" class="lang-selector">
+                        <option value="es">Español</option>
+                        <option value="en">English</option>
+                        <option value="ja">日本語</option>
+                        <option value="de">Deutsch</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </li>
+            </ul>
         </nav>
-        <div class="lang-selector">
-          <select id="langSelect" onchange="changeLanguage(this.value)">
-            <option value="es" selected>🇪🇸 Español</option>
-            <option value="en">🇺🇸 English</option>
-            <option value="ja">🇯🇵 日本語</option>
-            <option value="zh">🇨🇳 中文</option>
-            <option value="ko">🇰🇷 한국어</option>
-          </select>
-        </div>
-      </div>
     </header>
 
+    <div class="container">
+        <section class="hero">
+            <h1>División 3: Vehículos & Maquinaria Diésel</h1>
+            <p>Exportación internacional de maquinaria pesada de construcción, motores diésel de alta durabilidad y vehículos comerciales de ingeniería japonesa.</p>
+        </section>
 
-  <section class="division-header">
-    <h1>División 3: Vehículos & Maquinaria Diésel Comercial</h1>
-    <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 0.5rem;">Exportación de generadores insonorizados, equipos de potencia y vehículos industriales diésel listos para embarque marítimo.</p>
-  </section>
-
-  <section class="division-gallery">
-    <div class="gallery-item">
-      <div class="gallery-img-placeholder">⚡</div>
-      <div class="gallery-content">
-        <div class="gallery-title">Generadores Insonorizados Denyo DCA</div>
-        <p class="gallery-text">Plantas eléctricas diésel estacionarias y portátiles de alta eficiencia energética e inspección mecánica completa.</p>
-      </div>
+        <div class="grid-3">
+            <div class="card">
+                <div style="width:100%; height:180px; background: linear-gradient(135deg, rgba(69, 230, 176, 0.25), rgba(11, 17, 30, 0.85)); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 2.8rem; color: var(--accent-jade); border: 1px solid var(--border-card); margin-bottom: 1.2rem;">🏗️</div>
+                <h3>Excavadoras y Maquinaria Pesada</h3>
+                <p>Equipos de movimiento de tierra de marcas líderes japonesas inspeccionadas rigurosamente y certificadas para operaciones severas.</p>
+            </div>
+            <div class="card">
+                <div style="width:100%; height:180px; background: linear-gradient(135deg, rgba(69, 230, 176, 0.2), rgba(11, 17, 30, 0.85)); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 2.8rem; color: var(--accent-jade); border: 1px solid var(--border-card); margin-bottom: 1.2rem;">⚡</div>
+                <h3>Motores Diésel y Generadores</h3>
+                <p>Unidades de potencia diésel estacionarias y marinizadas reconocidas globalmente por su economía de combustible y longevidad.</p>
+            </div>
+            <div class="card">
+                <div style="width:100%; height:180px; background: linear-gradient(135deg, rgba(69, 230, 176, 0.15), rgba(11, 17, 30, 0.85)); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 2.8rem; color: var(--accent-jade); border: 1px solid var(--border-card); margin-bottom: 1.2rem;">🚚</div>
+                <h3>Camiones y Vehículos Especiales</h3>
+                <p>Camiones diésel ligeros, medianos y pesados equipados con tecnología de emisión eficiente para distribución e infraestructura.</p>
+            </div>
+        </div>
     </div>
 
-    <div class="gallery-item">
-      <div class="gallery-img-placeholder">🚜</div>
-      <div class="gallery-content">
-        <div class="gallery-title">Motores Diésel Industrial Yanmar & Kubota</div>
-        <p class="gallery-text">Motores estacionarios para aplicaciones agrícolas, marinas y mineras con kit de repuestos originales.</p>
-      </div>
-    </div>
-
-    <div class="gallery-item">
-      <div class="gallery-img-placeholder">🚚</div>
-      <div class="gallery-content">
-        <div class="gallery-title">Vehículos Comerciales Toyota Land Cruiser / Isuzu</div>
-        <p class="gallery-text">Unidades diésel 4x4 y camiones ligeros utilitarios acondicionados para exportación marítima RORO/Container.</p>
-      </div>
-    </div>
-  </section>
-
-  
-    <!-- FOOTER -->
-    <footer class="footer-block">
-      <div class="footer-container">
-        <div class="footer-col">
-          <div class="brand-logo">
-            <div class="logo-icon-gem">WTJ</div>
-            <span class="brand-name">WORLD TECH JAPAN Co., Ltd.</span>
-          </div>
-          <p class="footer-desc">Procura técnica, comercio exterior y logística internacional directa desde Yokohama, Japón.</p>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h4>WORLD TECH JAPAN Co., Ltd.</h4>
+                <p>División de Vehículos Comerciales & Maquinaria Diésel.</p>
+            </div>
+            <div class="footer-info">
+                <h4 data-i18n="contactTitle">Contacto Oficial Corporativo</h4>
+                <p><span data-i18n="primaryEmail">Correo Corporativo Principal:</span> <a href="mailto:contacto@worldtechjapan.com" class="email-primary">contacto@worldtechjapan.com</a></p>
+                <p><span data-i18n="secondaryEmail">Correo Secundario:</span> <a href="mailto:worldtechjapan@gmail.com" class="email-secondary">worldtechjapan@gmail.com</a></p>
+            </div>
         </div>
-        <div class="footer-col">
-          <h4>Contacto Oficial</h4>
-          <p><strong>Principal:</strong> <a href="mailto:contacto@worldtechjapan.com">contacto@worldtechjapan.com</a></p>
-          <p><strong>Secundario:</strong> <a href="mailto:worldtechjapan@gmail.com">worldtechjapan@gmail.com</a></p>
-          <p><strong>Ubicación:</strong> Yokohama, Kanagawa, Japón</p>
+        <div class="copyright">
+            &copy; 2026 WORLD TECH JAPAN Co., Ltd. Todos los derechos reservados.
         </div>
-        <div class="footer-col">
-          <h4>Divisiones Comerciales</h4>
-          <ul>
-            <li><a href="industrial.html">Industrial & Metrología</a></li>
-            <li><a href="audio.html">Audio High-End JDM</a></li>
-            <li><a href="maquinaria.html">Vehículos & Maquinaria Diésel</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; WORLD TECH JAPAN Co., Ltd. Todos los derechos reservados.</p>
-      </div>
     </footer>
 
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
